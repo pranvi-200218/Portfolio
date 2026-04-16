@@ -870,12 +870,14 @@ body.light-theme {
   padding: 2rem 1rem;
   display: grid;
   place-items: center;
+  align-items: flex-start;       
   transition: opacity var(--t-slow), visibility var(--t-slow);
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  overflow-y: auto;               
 }
 
 .services__modal-content {
@@ -887,6 +889,8 @@ body.light-theme {
   box-shadow: 0 30px 80px hsla(var(--first-hue),var(--sat),var(--lig),0.15);
   transform: scale(0.85) translateY(20px);
   transition: transform var(--t-slow);
+  max-height: 90vh;              
+  overflow-y: auto;              
 }
 
 .active-modal .services__modal-content { transform: scale(1) translateY(0); }
