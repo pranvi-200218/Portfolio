@@ -968,7 +968,14 @@ body.light-theme {
   overflow: hidden;
 }
 
-.work__card:hover .work__img { transform: scale(1.04); }
+.work__img-placeholder {
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  transition: var(--t-med);
+  overflow: hidden;
+}
+
+.work__card:hover .work__img-placeholder { transform: scale(1.04); }
 
 .work__title { font-size: var(--normal-font-size); font-weight: var(--font-medium); margin-bottom: 0.25rem; }
 
